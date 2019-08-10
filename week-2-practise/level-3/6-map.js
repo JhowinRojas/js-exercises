@@ -5,13 +5,13 @@
 
 function tidyUpString(str) {
   return str
-    .trim()
-    .toLowerCase()
-    .replace("/", "");
+      .trim()
+      .toLowerCase()
+      .replace("/", "");
 }
 
 function captialise(str) {
-  // complete this function
+  return str // complete this function
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
@@ -20,7 +20,7 @@ var mentorsTidyAndCapitalised;
 console.log(mentorsTidyAndCapitalised);
 
 /* 
-  EXPECTED RESULT
-  ---------------
-  ["Daniel", "Irina", "Gordon", "Ashleigh"]
+EXPECTED RESULT
+---------------
+["Daniel", "Irina", "Gordon", "Ashleigh"]
 */

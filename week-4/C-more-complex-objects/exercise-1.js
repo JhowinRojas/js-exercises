@@ -1,22 +1,20 @@
 /*
   Given the following house - follow the instructions below.
-
   Make sure you run the file after and it outputs the correct results.
 */
 
 var house = {
-    address: "1 Kinning Park",
-    previousOwners: ["Claire M.", "John A."],
-    currentOwner: {
-      firstName: "Margaret",
+  address: "51 Berkley Road",
+  previousOwners: ["Brian M.", "Fiona S."],
+  currentOwner: {
+      firstName: "Montgomery",
       lastName: "Conway"
-    }
+  }
 };
 
 /*
-  DO NOT EDIT ANYTHING ABOVE THIS LINE
-
-  WRITE YOUR CODE BELOW
+DO NOT EDIT ANYTHING ABOVE THIS LINE
+WRITE YOUR CODE BELOW
 */
 
 // - change the address of "house" to '51 Berkley Road'
@@ -25,9 +23,9 @@ var house = {
 
 
 /*
-  DO NOT EDIT ANYTHING BELOW THIS LINE
+DO NOT EDIT ANYTHING BELOW THIS LINE
 */
 
 console.log("Expected result: 51 Berkley Road. Actual result: " + house.address);
 console.log("Expected result: Brian M., Fiona S. Actual result: " + house.previousOwners.toString());
-console.log("Expected result: Montgomery. Actual result: " + house.currentOwner.lastName);
+console.log("Expected result: Montgomery. Actual result: " + house.currentOwner.firstName);

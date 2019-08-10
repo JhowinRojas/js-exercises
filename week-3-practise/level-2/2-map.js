@@ -14,7 +14,21 @@ var attendances = [
   ["Nina", 10]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+var eligibleStudentNames = attendances.map(function eligibleStudentNames(attendance) {;
+  if (attendance[1] >= 8) {
+      return attendance[0];
+  }
+});
+
+eligibleStudentNames = eligibleStudentNames.filter(attendance => attendance !== undefined) // TODO: Complete this line.
+
+// function a(element) {
+//     if (element !== undefined) {
+//         return element;
+//     }
+// }
+
+
 
 console.log(eligibleStudentNames);
 

@@ -9,6 +9,11 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+function nombres(name , danielsRole){
+  return "Hi, I'm " + name + " I'm a " + danielsRole
+}
+
+console.log(nombres(name , danielsRole))
 /* 
 EXPECTED RESULT
 ---------------

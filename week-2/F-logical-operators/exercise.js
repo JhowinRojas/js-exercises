@@ -9,10 +9,21 @@
 var htmlLevel = 8;
 var cssLevel = 4;
 
+
+function html (ht , cs){
+  if (ht > 5 && cs > 5){
+    return true
+  }
+}
+
+
+
 // Finish the statement to check whether HTML, CSS knowledge are above 5
 // (hint: use the comparison operator from before)
 var htmlLevelAbove5;
 var cssLevelAbove5;
+
+function 
 
 // Finish the next two statement
 // Use the previous variables and logical operators

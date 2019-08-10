@@ -5,12 +5,16 @@
 // - insert the replacement value at the provided index
 
 function replace(arr, index, value) {
-  return; // complete this statement
+  let position = arr.indexOf(index)
+  let newArr = [...arr] //copia del arreglo original
+  newArr[position] = value;
+  return newArr; // complete this statement 
 }
 
+
 /* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+DO NOT EDIT BELOW THIS LINE
+--------------------------- */
 var numbers = [1, 3, 3];
 var names = ["Irina", "Ashleigh", "Mozafar"];
 

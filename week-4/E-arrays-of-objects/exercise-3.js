@@ -1,16 +1,12 @@
 /* 
 Below are some restaurants in Glasgow. Each restaurant has a name, the number of total seats, 
 the number of customers in the restaurant at the moment and the menu with prices.
-
 We want to build an object to simulate a Restaurant Finder application (see below restaurantFinderApplication).
-
 1) Define a method findAvailableRestaurants which takes a number of people in parameter and returns 
 all the restaurant names which have the required number of seats available at the moment.
-
 2) Define a method findRestaurantServingDish which takes a dish name in parameter and returns
 all the restaurant names serving this dish.
-
-3) Define a method countNumberOfRestaurantsInArea which takes an area of Glasgow in parameter (center, west),
+3) Define a method countNumberOfRestaurantsInArea which takes an area of Glasgow in parameter (centre, west),
 and returns the number of restaurants in this area.
 */
 
@@ -49,6 +45,8 @@ var restaurant3 = {
 
 var restaurants = [restaurant1, restaurant2, restaurant3];
 
+let restaurantName = restaurants => restaurants.name;
+
 /* 
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
@@ -60,13 +58,13 @@ var restaurantFinderApplication = {
     applicationVersion: "1.0",
     restaurants: restaurants,
     findAvailableRestaurants: function(numberOfPeople) {
-        // Complete here
+        return restaurants.filter(restaurant => (restaurant.totalSeats - restaurant.numberOfCustomers) >= numberOfPeople).map(restaurantName) // Complete here
     },
     findRestaurantServingDish: function(dishName) {
-        // Complete here
+        return restaurants.filter(restaurant => restaurant.menu.includes(dishName)).map(restaurantName) // Complete here
     },
     countNumberOfRestaurantsInArea: function(area) {
-        // Complete here
+        return restaurants.filter(restaurant => restaurant.address.area === area).length // Complete here
     }
 };
 

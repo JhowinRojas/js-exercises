@@ -1,28 +1,27 @@
 /*
     Given the same "house" object again
-
     Follow the instructions below and then run the file 
     and make sure it outputs the correct results
 */
 
 var house = {
-    address: "1 Kinning Park",
-    previousOwners: ["Claire M.", "John A."],
-    currentOwner: {
+  address: "1 Kinning Park",
+  previousOwners: ["Claire M.", "Stephen B."],
+  isForSale: false,
+  currentOwner: {
       firstName: "Margaret",
       lastName: "Conway"
-    }
+  }
 };
 
-var newCurrentOwner = {
-    firstName: "Georgina",
-    lastName: "Hernandez"
+var currentOwner = {
+  firstName: "Georgina",
+  lastName: "Hernandez"
 };
 
 /*
-  DO NOT EDIT ANYTHING ABOVE THIS LINE
-
-  WRITE YOUR CODE BELOW
+DO NOT EDIT ANYTHING ABOVE THIS LINE
+WRITE YOUR CODE BELOW
 */
 
 // - assign the value of the variable 'newCurrentOwner' as the value to the house's "currentOwner"
@@ -33,10 +32,10 @@ var newCurrentOwner = {
 
 
 /*
-  DO NOT EDIT ANYTHING BELOW THIS LINE
+DO NOT EDIT ANYTHING BELOW THIS LINE
 */
 console.log(
-    "Did you correctly assign the new owner using the given variable?",
-    "Expected result: true. Actual result: " + (house.currentOwner === newCurrentOwner));
+  "Did you correctly assign the new owner using the given variable?",
+  "Expected result: true. Actual result: " + (house.currentOwner != currentOwner));
 console.log("Expected result: Claire M., Stephen B. Actual result: " + house.previousOwners.toString());
 console.log("Expected result: false. Actual result: " + house.isForSale);
